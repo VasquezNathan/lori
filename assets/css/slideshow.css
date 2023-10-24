@@ -4,6 +4,7 @@
     position: relative;
     display: flex;
     /* margin: auto; */
+    margin-right: 10px;
 }
 
 /* images are hidden by default. */

@@ -1,6 +1,18 @@
-section {
-    height: 100vh;
+p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: lightslategray;
+    font-size: 14pt;
 }
+
+h1, h5 {
+    /* border: 1px solid black; */
+    font-weight: 25;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: lightslategray;
+    margin: 0;
+}
+
 
 .content {
     padding-top: 50px;
@@ -20,6 +32,8 @@ section {
     max-width: 1200px;
     min-width: 600px;
     margin: auto;
+    /* height: 650px; */
+    height: 50vh;
 }
 
 .text-div {
@@ -35,17 +49,46 @@ section {
     justify-content: center;
 }
 
-h1, h5 {
-    /* border: 1px solid black; */
-    font-weight: 25;
-    text-align: center;
-    margin: 0;
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    min-width: 600px;
+    /* border-top: 1px solid lightslategray; */
+    /* border-bottom: 1px solid lightslategray; */
+    margin: auto;
+    /* height: 50vh; */
 }
 
 .hstack {
     display: flex;
-    /* flex: 1; */
     flex-direction: row;
+    flex: 1 1 0;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     /* margin: auto; */
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    /* height: 650px; */
+}
+
+#map {
+    /* height: 100%; */
+    /* width: 50%; */
+    /* margin-top: 10pt; */
+    /* border: 1px solid red; */
+    margin: 10px;
+    min-width: 500px;
+    min-height: 500px;
+}
+
+.contact-text {
+    margin: 10px;
+    /* height: 30vh; */
+    /* border: 1px solid red; */
+    /* height: 670px; */
 }

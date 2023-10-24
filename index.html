@@ -11,30 +11,43 @@
 
         <!-- slideshow -->
         <link rel="stylesheet" href="assets/css/slideshow.css">
-        <script src="assets/js/slideshow.js" defer></script>
-
+        <script defer src="assets/js/slideshow.js"></script>
+        
+        <!-- for google maps -->
+        <script defer
+            src="assets/js/map.js">
+        </script>
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap">
+        </script>
     </head>
     <body>
-        <div class="navbar">
-            <div class="vertical-center">
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul> 
-                
+        
+        <div class="vstack">
+            
+            <div class="hstack" style="align-items:center; justify-content: center; gap: 20px;">
+                <p style="font-size:26pt;"> Hi,<br>I'm Lori...</p>
+                <img style="min-width: 200px; max-width: 400px;"src="assets/images/PORTRAIT.jpg">
             </div>
-        </div>
-
-        <div class="content" id="about">
+            
+            
+            <div class="navbar">
+                <div class="vertical-center">
+                    <ul>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul> 
+                    
+                </div>
+            </div>
+            
             <h1>ABOUT ME</h1>
-
-            <div style="display: flex; flex-direction: row; justify-content: center; flex-wrap: wrap; gap: 10px;">
+            
+            <div class="hstack">
                 <div class="text-div">
                     <p style="margin-left: 10px;">Massage isn't just a luxury. On a regular basis, therapeutic massage can help to improve health, rejuvenation, mood, and wellness. My goal is to intuitively listen to the body for a direction in treatment.</p>
                     <p style="margin-left: 10px;">I began my journey in massage therapy in Jan. 2003. In 2007 I became a Holistic Health Practitioner (HHP), with over 1000 course hours in the theory, practice, and clinical application of massage therapy training. I have also completed 48 hours of continuing education in advanced anatomy and human dissection as well as my California Massage Therapy Council (CMATC) certification.</p>
                 </div>
-    
-                <!-- slide show container -->
                 <div class="slideshow-container">
                     
                     <!-- slides -->
@@ -62,28 +75,28 @@
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
     
                 </div>
-            
             </div>
 
-        </div>
-
-        <!-- hstack -->
-        <div class="content" id="contact">
             <h1>CONTACT</h1>
-            
-            <p style="margin-left: 10px;"> BY APPOINTMENT ONLY
-                <br>Feel free to leave a message
-                <br>Text inquiries welcome
-                <br>cell: +1 (951-537-7297) 
-                
-                <br>
-                <br>Massage By Lori
-                <br>@ Shear Wonders Salon + Day Spa
-                <br>737 Beaumont Ave
-                <br>Beaumont CA, 92223
-                
-            </p>
 
+            <div class="hstack">
+                <p class="contact-text"> BY APPOINTMENT ONLY
+                    <br>Feel free to leave a message
+                    <br>Text inquiries welcome
+                    <br>cell: +1 (951-537-7297) 
+                    
+                    <br>
+                    <br>Massage By Lori
+                    <br>@ Shear Wonders Salon + Day Spa
+                    <br>737 Beaumont Ave
+                    <br>Beaumont CA, 92223
+                    
+                </p>
+                <div id="map" name="map"></div>
+            </div>
+
+            <div style="height: 100vh;">
+            </div>
         </div>
 
     </body>
